@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Xanh+Mono:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Xanh+Mono:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+
+.experience {
+    max-width: 1800px;
+    margin: 3rem auto;
+    background-color: whitesmoke;
+    padding: 4rem;
+}
+
+
+.experience > h1 {
+    color: rgb(107, 107, 172);
+    text-align: center;
+    font-size: 4rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+.experience > p {
+    font-size: 2rem;
+    margin-top: 4rem;
+}
+
+.experience__card {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 2rem auto;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid rgba(201, 200, 200, 0.76);
+    padding-bottom:2rem ;
+
+}
+
+.experience__card > img {
+    height:350px;
+}
+
+.experience__card__content {
+    max-width:600px ;
+    padding: 2rem;
+}
+
+.experience__card__content > P {
+    margin-top: 2rem;
+    font-family: 'Xanh Mono', monospace;
+    font-size: larger;
+}
+
+.experience__card__content > h1 {
+    font-family: 'Xanh Mono', monospace;
+
+}
+
+@media screen and (max-width: 768px) {
+
+    .experience > h1 {
+        font-size: 2.6rem;
+    }
+
+    .experience__card > img {
+        height: 200px;
+    }
+}

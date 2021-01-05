@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Italianno&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+
+.navbar {
+    position: fixed;
+    width: 100%;
+    z-index: 99;
+}
+
+.navbar__icon {
+    display: none;
+}
+
+.navbar__black {
+    position: fixed;
+    width: 100%;
+    z-index: 99;
+    background:linear-gradient(90deg, #BA81FF 0%, #FF6A95 99%) ;
+    transition: all 1s;
+}
+
+.navbar__container {
+    padding:20px 20px;
+    margin: 0 auto;
+    max-width: 1100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar__logo {
+    font-size: 2rem;
+    color: white;
+    z-index: 10;
+    cursor: pointer;
+}
+
+.navbar__logo > span {
+    font-family: 'Italianno', cursive;
+    font-size: 3rem;
+    font-weight: 560;
+    margin-left: 2px;
+}
+
+.navbar__logo:hover {
+    color: rgb(224, 224, 224);
+}
+
+.navbar__rightToggle {
+    display: flex;
+    list-style: none;
+}
+
+
+.navbar__rightToggle > li {
+    margin: 0 10px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: white;
+    z-index: 10;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+}
+
+.navbar__rightToggle > li:hover {
+    color: rgb(199, 199, 199);
+}
+
+.navbar__right {
+    display: flex;
+    list-style: none;
+}
+
+.navbar__right > li {
+    margin: 0 10px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: white;
+    z-index: 10;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.navbar__right > li:hover {
+    color: rgb(199, 199, 199);
+}
+
+@media screen and (max-width: 768px){
+
+    .navbar__container {
+        padding: 10px 40px;
+    }
+
+    .navbar__icon {
+        display: block;
+    }
+
+    .navbar__right {
+        display: none;
+    }
+
+    .navbar__rightToggle {
+        display: flex;
+        list-style: none;
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 80px;
+        background-color: rgba(128, 128, 128, 0);
+        height: calc(100vh - 80px);
+        padding: 0;
+    }
+
+    .navbar__rightToggle > li {
+        text-align: center;
+        padding: 10px 20px;
+        margin: 0 10px;
+        font-size: 1.2rem;
+        font-weight: 600;
+        color: white;
+        z-index: 10;
+        cursor: pointer;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    .navbar__rightToggle__black {
+    background-color: #ff6a94;
+    }
+
+    .navbar__icon > button {
+        background-color: rgba(128, 128, 128, 0);
+        border: none;
+        cursor: pointer;
+    }
+
+}
